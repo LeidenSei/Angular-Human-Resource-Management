@@ -42,7 +42,7 @@ class InfoController extends Controller
         $dataFix=DB::table('info')->find($id);
         return view('Fix',compact('dataFix'));
     }
-
+Heloee git
     public function afterFix(InfoRequest $req,$id)  {
         $dataFix=DB::table('info')->find($id);
         $validated = $req->validated();
